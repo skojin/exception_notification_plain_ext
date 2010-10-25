@@ -1,0 +1,11 @@
+Non Controller Exception extention to Exception Notifier Plugin for Rails
+=====================
+
+  Deliver non controller based exception, like errors from cron tasks.
+  Depends from http://github.com/rails/exception_notification
+
+Example
+=======
+
+    ExceptionNotifier.deliver_plain_exception_notification($!, "events export")
+    ExceptionNotifier.deliver_plain_exception_notification($!)
